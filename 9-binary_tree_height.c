@@ -21,11 +21,11 @@ right_tree = binary_tree_height(tree->right);
 
 if (left_tree >= right_tree)
 {
-    return (left_tree) + 1;
+    return (left_tree);
 }
 else
 {
-    return (right_tree) + 1;
+    return (right_tree);
 }
 
 }
