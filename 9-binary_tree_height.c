@@ -15,17 +15,19 @@ if (tree == NULL)
 {
     return (0);
 }
+else
+{
 
-left_tree = binary_tree_height(tree->left);
-right_tree = binary_tree_height(tree->right);
-
+left_tree = binary_tree_height(tree->left) + 1;
+right_tree = binary_tree_height(tree->right) + 1;
+}
 if (left_tree >= right_tree)
 {
-    return (left_tree + 1);
+    return (left_tree);
 }
 else
 {
-    return (right_tree) + 1;
+    return (right_tree);
 }
 
 }
