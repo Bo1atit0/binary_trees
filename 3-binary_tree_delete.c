@@ -18,4 +18,3 @@ binary_tree_delete(tree->right);
 
 free(tree);
 }
-
