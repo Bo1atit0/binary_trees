@@ -15,12 +15,14 @@ if (tree == NULL)
 {
     return (0);
 }
-else
+if (tree->left == NULL && tree->right == NULL)
 {
+    return (0);
+}
 
 left_tree = binary_tree_height(tree->left) + 1;
 right_tree = binary_tree_height(tree->right) + 1;
-}
+
 if (left_tree >= right_tree)
 {
     return (left_tree);
