@@ -15,11 +15,12 @@ if (tree == NULL)
     return(0);
 }
 
-binary_tree_nodes(tree->left);
 if (tree->right != NULL || tree->left != NULL)
 {
     nodes++;
 }
+binary_tree_nodes(tree->left);
+
 binary_tree_nodes(tree->right);
 
 return (nodes);
