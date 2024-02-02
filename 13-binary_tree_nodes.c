@@ -18,8 +18,8 @@ if (tree->right != NULL || tree->left != NULL)
 {
     return (1);
 }
-left = binary_tree_leaves(tree->left);
-right = binary_tree_leaves(tree->right);
+left = binary_tree_nodes(tree->left);
+right = binary_tree_nodes(tree->right);
 
 return (left + right);
 
