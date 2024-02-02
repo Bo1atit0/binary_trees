@@ -24,4 +24,5 @@ while(tree->parent != NULL)
     depth++;
     tree = tree->parent;
 }
+return (depth);
 }
