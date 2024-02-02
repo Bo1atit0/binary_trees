@@ -19,9 +19,9 @@ if (tree->right != NULL || tree->left != NULL)
 {
     nodes++;
 }
-binary_tree_nodes(tree->left);
+nodes += binary_tree_nodes(tree->left);
 
-binary_tree_nodes(tree->right);
+nodes += binary_tree_nodes(tree->right);
 
 return (nodes);
 
